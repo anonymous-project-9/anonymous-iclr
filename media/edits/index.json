@@ -1,0 +1,667 @@
+{
+ "great_pyramid_giza": {
+  "edits": [
+   {
+    "edit": "add_balloon",
+    "category": "add",
+    "prompt": "Add a large colourful hot-air balloon floating in the sky above the building."
+   },
+   {
+    "edit": "add_banners",
+    "category": "add",
+    "prompt": "Hang large red festival banners and flags on the facade of the building."
+   },
+   {
+    "edit": "add_crowd",
+    "category": "add",
+    "prompt": "Add a crowd of tourists walking on the ground in front of the building."
+   },
+   {
+    "edit": "add_fountain",
+    "category": "add",
+    "prompt": "Add a round stone fountain with splashing water in the foreground."
+   },
+   {
+    "edit": "light_golden",
+    "category": "modify",
+    "prompt": "Make it golden hour: low warm sun from the left, long shadows, orange glow on the facade."
+   },
+   {
+    "edit": "light_night",
+    "category": "modify",
+    "prompt": "Make it night: dark blue sky with stars, the building floodlit in warm orange light, windows and arches glowing."
+   },
+   {
+    "edit": "material_ivy",
+    "category": "modify",
+    "prompt": "Cover the building densely with green ivy and moss, as if abandoned for centuries."
+   },
+   {
+    "edit": "material_marble",
+    "category": "modify",
+    "prompt": "Turn the building's stone into polished white marble with gold trim."
+   },
+   {
+    "edit": "remove_people",
+    "category": "remove",
+    "prompt": "Remove every person, vehicle, fence and sign from the scene, leaving the empty ground."
+   },
+   {
+    "edit": "remove_trees",
+    "category": "remove",
+    "prompt": "Remove all trees and bushes; show what is behind them (sky, ground, distant buildings)."
+   },
+   {
+    "edit": "replace_ground_sand",
+    "category": "replace",
+    "prompt": "Replace the ground, grass and pavement with golden desert sand dunes."
+   },
+   {
+    "edit": "replace_ground_water",
+    "category": "replace",
+    "prompt": "Replace the ground and grass in front of the building with a calm, shallow reflecting pool that mirrors the building."
+   },
+   {
+    "edit": "replace_sky_storm",
+    "category": "replace",
+    "prompt": "Replace the sky with dark dramatic storm clouds and a lightning bolt."
+   },
+   {
+    "edit": "style_cyberpunk",
+    "category": "modify",
+    "prompt": "Make it a cyberpunk night scene: neon signs in magenta and cyan on the building, holographic advertisements, wet street."
+   },
+   {
+    "edit": "style_painting",
+    "category": "modify",
+    "prompt": "Render the scene as a Van Gogh style oil painting with thick swirling brush strokes."
+   },
+   {
+    "edit": "weather_fog",
+    "category": "modify",
+    "prompt": "Make it a thick foggy morning: the distant parts of the scene fade into grey mist."
+   },
+   {
+    "edit": "weather_rain",
+    "category": "modify",
+    "prompt": "Make it a rainy day: wet reflective ground, puddles, dark overcast sky."
+   },
+   {
+    "edit": "weather_snow",
+    "category": "modify",
+    "prompt": "Make it a heavy winter snowfall: snow covering the ground, roofs and trees, falling snowflakes, overcast sky."
+   }
+  ],
+  "grid": true
+ },
+ "eiffel_tower": {
+  "edits": [
+   {
+    "edit": "add_balloon",
+    "category": "add",
+    "prompt": "Add a large colourful hot-air balloon floating in the sky above the building."
+   },
+   {
+    "edit": "add_banners",
+    "category": "add",
+    "prompt": "Hang large red festival banners and flags on the facade of the building."
+   },
+   {
+    "edit": "add_crowd",
+    "category": "add",
+    "prompt": "Add a crowd of tourists walking on the ground in front of the building."
+   },
+   {
+    "edit": "add_fountain",
+    "category": "add",
+    "prompt": "Add a round stone fountain with splashing water in the foreground."
+   },
+   {
+    "edit": "light_golden",
+    "category": "modify",
+    "prompt": "Make it golden hour: low warm sun from the left, long shadows, orange glow on the facade."
+   },
+   {
+    "edit": "light_night",
+    "category": "modify",
+    "prompt": "Make it night: dark blue sky with stars, the building floodlit in warm orange light, windows and arches glowing."
+   },
+   {
+    "edit": "material_ivy",
+    "category": "modify",
+    "prompt": "Cover the building densely with green ivy and moss, as if abandoned for centuries."
+   },
+   {
+    "edit": "material_marble",
+    "category": "modify",
+    "prompt": "Turn the building's stone into polished white marble with gold trim."
+   },
+   {
+    "edit": "remove_people",
+    "category": "remove",
+    "prompt": "Remove every person, vehicle, fence and sign from the scene, leaving the empty ground."
+   },
+   {
+    "edit": "remove_trees",
+    "category": "remove",
+    "prompt": "Remove all trees and bushes; show what is behind them (sky, ground, distant buildings)."
+   },
+   {
+    "edit": "replace_ground_sand",
+    "category": "replace",
+    "prompt": "Replace the ground, grass and pavement with golden desert sand dunes."
+   },
+   {
+    "edit": "replace_ground_water",
+    "category": "replace",
+    "prompt": "Replace the ground and grass in front of the building with a calm, shallow reflecting pool that mirrors the building."
+   },
+   {
+    "edit": "replace_sky_storm",
+    "category": "replace",
+    "prompt": "Replace the sky with dark dramatic storm clouds and a lightning bolt."
+   },
+   {
+    "edit": "style_cyberpunk",
+    "category": "modify",
+    "prompt": "Make it a cyberpunk night scene: neon signs in magenta and cyan on the building, holographic advertisements, wet street."
+   },
+   {
+    "edit": "style_painting",
+    "category": "modify",
+    "prompt": "Render the scene as a Van Gogh style oil painting with thick swirling brush strokes."
+   },
+   {
+    "edit": "weather_fog",
+    "category": "modify",
+    "prompt": "Make it a thick foggy morning: the distant parts of the scene fade into grey mist."
+   },
+   {
+    "edit": "weather_rain",
+    "category": "modify",
+    "prompt": "Make it a rainy day: wet reflective ground, puddles, dark overcast sky."
+   },
+   {
+    "edit": "weather_snow",
+    "category": "modify",
+    "prompt": "Make it a heavy winter snowfall: snow covering the ground, roofs and trees, falling snowflakes, overcast sky."
+   }
+  ],
+  "grid": true
+ },
+ "notre_dame_paris": {
+  "edits": [
+   {
+    "edit": "add_balloon",
+    "category": "add",
+    "prompt": "Add a large colourful hot-air balloon floating in the sky above the building."
+   },
+   {
+    "edit": "add_banners",
+    "category": "add",
+    "prompt": "Hang large red festival banners and flags on the facade of the building."
+   },
+   {
+    "edit": "add_crowd",
+    "category": "add",
+    "prompt": "Add a crowd of tourists walking on the ground in front of the building."
+   },
+   {
+    "edit": "add_fountain",
+    "category": "add",
+    "prompt": "Add a round stone fountain with splashing water in the foreground."
+   },
+   {
+    "edit": "light_golden",
+    "category": "modify",
+    "prompt": "Make it golden hour: low warm sun from the left, long shadows, orange glow on the facade."
+   },
+   {
+    "edit": "light_night",
+    "category": "modify",
+    "prompt": "Make it night: dark blue sky with stars, the building floodlit in warm orange light, windows and arches glowing."
+   },
+   {
+    "edit": "material_ivy",
+    "category": "modify",
+    "prompt": "Cover the building densely with green ivy and moss, as if abandoned for centuries."
+   },
+   {
+    "edit": "material_marble",
+    "category": "modify",
+    "prompt": "Turn the building's stone into polished white marble with gold trim."
+   },
+   {
+    "edit": "remove_people",
+    "category": "remove",
+    "prompt": "Remove every person, vehicle, fence and sign from the scene, leaving the empty ground."
+   },
+   {
+    "edit": "remove_trees",
+    "category": "remove",
+    "prompt": "Remove all trees and bushes; show what is behind them (sky, ground, distant buildings)."
+   },
+   {
+    "edit": "replace_ground_sand",
+    "category": "replace",
+    "prompt": "Replace the ground, grass and pavement with golden desert sand dunes."
+   },
+   {
+    "edit": "replace_ground_water",
+    "category": "replace",
+    "prompt": "Replace the ground and grass in front of the building with a calm, shallow reflecting pool that mirrors the building."
+   },
+   {
+    "edit": "replace_sky_storm",
+    "category": "replace",
+    "prompt": "Replace the sky with dark dramatic storm clouds and a lightning bolt."
+   },
+   {
+    "edit": "style_cyberpunk",
+    "category": "modify",
+    "prompt": "Make it a cyberpunk night scene: neon signs in magenta and cyan on the building, holographic advertisements, wet street."
+   },
+   {
+    "edit": "style_painting",
+    "category": "modify",
+    "prompt": "Render the scene as a Van Gogh style oil painting with thick swirling brush strokes."
+   },
+   {
+    "edit": "weather_fog",
+    "category": "modify",
+    "prompt": "Make it a thick foggy morning: the distant parts of the scene fade into grey mist."
+   },
+   {
+    "edit": "weather_rain",
+    "category": "modify",
+    "prompt": "Make it a rainy day: wet reflective ground, puddles, dark overcast sky."
+   },
+   {
+    "edit": "weather_snow",
+    "category": "modify",
+    "prompt": "Make it a heavy winter snowfall: snow covering the ground, roofs and trees, falling snowflakes, overcast sky."
+   }
+  ],
+  "grid": true
+ },
+ "taj_mahal": {
+  "edits": [
+   {
+    "edit": "add_balloon",
+    "category": "add",
+    "prompt": "Add a large colourful hot-air balloon floating in the sky above the building."
+   },
+   {
+    "edit": "add_banners",
+    "category": "add",
+    "prompt": "Hang large red festival banners and flags on the facade of the building."
+   },
+   {
+    "edit": "add_crowd",
+    "category": "add",
+    "prompt": "Add a crowd of tourists walking on the ground in front of the building."
+   },
+   {
+    "edit": "add_fountain",
+    "category": "add",
+    "prompt": "Add a round stone fountain with splashing water in the foreground."
+   },
+   {
+    "edit": "light_golden",
+    "category": "modify",
+    "prompt": "Make it golden hour: low warm sun from the left, long shadows, orange glow on the facade."
+   },
+   {
+    "edit": "light_night",
+    "category": "modify",
+    "prompt": "Make it night: dark blue sky with stars, the building floodlit in warm orange light, windows and arches glowing."
+   },
+   {
+    "edit": "material_ivy",
+    "category": "modify",
+    "prompt": "Cover the building densely with green ivy and moss, as if abandoned for centuries."
+   },
+   {
+    "edit": "material_marble",
+    "category": "modify",
+    "prompt": "Turn the building's stone into polished white marble with gold trim."
+   },
+   {
+    "edit": "remove_people",
+    "category": "remove",
+    "prompt": "Remove every person, vehicle, fence and sign from the scene, leaving the empty ground."
+   },
+   {
+    "edit": "remove_trees",
+    "category": "remove",
+    "prompt": "Remove all trees and bushes; show what is behind them (sky, ground, distant buildings)."
+   },
+   {
+    "edit": "replace_ground_sand",
+    "category": "replace",
+    "prompt": "Replace the ground, grass and pavement with golden desert sand dunes."
+   },
+   {
+    "edit": "replace_ground_water",
+    "category": "replace",
+    "prompt": "Replace the ground and grass in front of the building with a calm, shallow reflecting pool that mirrors the building."
+   },
+   {
+    "edit": "replace_sky_storm",
+    "category": "replace",
+    "prompt": "Replace the sky with dark dramatic storm clouds and a lightning bolt."
+   },
+   {
+    "edit": "style_cyberpunk",
+    "category": "modify",
+    "prompt": "Make it a cyberpunk night scene: neon signs in magenta and cyan on the building, holographic advertisements, wet street."
+   },
+   {
+    "edit": "style_painting",
+    "category": "modify",
+    "prompt": "Render the scene as a Van Gogh style oil painting with thick swirling brush strokes."
+   },
+   {
+    "edit": "weather_fog",
+    "category": "modify",
+    "prompt": "Make it a thick foggy morning: the distant parts of the scene fade into grey mist."
+   },
+   {
+    "edit": "weather_rain",
+    "category": "modify",
+    "prompt": "Make it a rainy day: wet reflective ground, puddles, dark overcast sky."
+   },
+   {
+    "edit": "weather_snow",
+    "category": "modify",
+    "prompt": "Make it a heavy winter snowfall: snow covering the ground, roofs and trees, falling snowflakes, overcast sky."
+   }
+  ],
+  "grid": true
+ },
+ "colosseum": {
+  "edits": [
+   {
+    "edit": "add_balloon",
+    "category": "add",
+    "prompt": "Add a large colourful hot-air balloon floating in the sky above the building."
+   },
+   {
+    "edit": "add_banners",
+    "category": "add",
+    "prompt": "Hang large red festival banners and flags on the facade of the building."
+   },
+   {
+    "edit": "add_crowd",
+    "category": "add",
+    "prompt": "Add a crowd of tourists walking on the ground in front of the building."
+   },
+   {
+    "edit": "add_fountain",
+    "category": "add",
+    "prompt": "Add a round stone fountain with splashing water in the foreground."
+   },
+   {
+    "edit": "light_golden",
+    "category": "modify",
+    "prompt": "Make it golden hour: low warm sun from the left, long shadows, orange glow on the facade."
+   },
+   {
+    "edit": "light_night",
+    "category": "modify",
+    "prompt": "Make it night: dark blue sky with stars, the building floodlit in warm orange light, windows and arches glowing."
+   },
+   {
+    "edit": "material_ivy",
+    "category": "modify",
+    "prompt": "Cover the building densely with green ivy and moss, as if abandoned for centuries."
+   },
+   {
+    "edit": "material_marble",
+    "category": "modify",
+    "prompt": "Turn the building's stone into polished white marble with gold trim."
+   },
+   {
+    "edit": "remove_people",
+    "category": "remove",
+    "prompt": "Remove every person, vehicle, fence and sign from the scene, leaving the empty ground."
+   },
+   {
+    "edit": "remove_trees",
+    "category": "remove",
+    "prompt": "Remove all trees and bushes; show what is behind them (sky, ground, distant buildings)."
+   },
+   {
+    "edit": "replace_ground_sand",
+    "category": "replace",
+    "prompt": "Replace the ground, grass and pavement with golden desert sand dunes."
+   },
+   {
+    "edit": "replace_ground_water",
+    "category": "replace",
+    "prompt": "Replace the ground and grass in front of the building with a calm, shallow reflecting pool that mirrors the building."
+   },
+   {
+    "edit": "replace_sky_storm",
+    "category": "replace",
+    "prompt": "Replace the sky with dark dramatic storm clouds and a lightning bolt."
+   },
+   {
+    "edit": "style_cyberpunk",
+    "category": "modify",
+    "prompt": "Make it a cyberpunk night scene: neon signs in magenta and cyan on the building, holographic advertisements, wet street."
+   },
+   {
+    "edit": "style_painting",
+    "category": "modify",
+    "prompt": "Render the scene as a Van Gogh style oil painting with thick swirling brush strokes."
+   },
+   {
+    "edit": "weather_fog",
+    "category": "modify",
+    "prompt": "Make it a thick foggy morning: the distant parts of the scene fade into grey mist."
+   },
+   {
+    "edit": "weather_rain",
+    "category": "modify",
+    "prompt": "Make it a rainy day: wet reflective ground, puddles, dark overcast sky."
+   },
+   {
+    "edit": "weather_snow",
+    "category": "modify",
+    "prompt": "Make it a heavy winter snowfall: snow covering the ground, roofs and trees, falling snowflakes, overcast sky."
+   }
+  ],
+  "grid": true
+ },
+ "great_wall_badaling": {
+  "edits": [
+   {
+    "edit": "add_balloon",
+    "category": "add",
+    "prompt": "Add a large colourful hot-air balloon floating in the sky above the building."
+   },
+   {
+    "edit": "add_banners",
+    "category": "add",
+    "prompt": "Hang large red festival banners and flags on the facade of the building."
+   },
+   {
+    "edit": "add_crowd",
+    "category": "add",
+    "prompt": "Add a crowd of tourists walking on the ground in front of the building."
+   },
+   {
+    "edit": "add_fountain",
+    "category": "add",
+    "prompt": "Add a round stone fountain with splashing water in the foreground."
+   },
+   {
+    "edit": "light_golden",
+    "category": "modify",
+    "prompt": "Make it golden hour: low warm sun from the left, long shadows, orange glow on the facade."
+   },
+   {
+    "edit": "light_night",
+    "category": "modify",
+    "prompt": "Make it night: dark blue sky with stars, the building floodlit in warm orange light, windows and arches glowing."
+   },
+   {
+    "edit": "material_ivy",
+    "category": "modify",
+    "prompt": "Cover the building densely with green ivy and moss, as if abandoned for centuries."
+   },
+   {
+    "edit": "material_marble",
+    "category": "modify",
+    "prompt": "Turn the building's stone into polished white marble with gold trim."
+   },
+   {
+    "edit": "remove_people",
+    "category": "remove",
+    "prompt": "Remove every person, vehicle, fence and sign from the scene, leaving the empty ground."
+   },
+   {
+    "edit": "remove_trees",
+    "category": "remove",
+    "prompt": "Remove all trees and bushes; show what is behind them (sky, ground, distant buildings)."
+   },
+   {
+    "edit": "replace_ground_sand",
+    "category": "replace",
+    "prompt": "Replace the ground, grass and pavement with golden desert sand dunes."
+   },
+   {
+    "edit": "replace_ground_water",
+    "category": "replace",
+    "prompt": "Replace the ground and grass in front of the building with a calm, shallow reflecting pool that mirrors the building."
+   },
+   {
+    "edit": "replace_sky_storm",
+    "category": "replace",
+    "prompt": "Replace the sky with dark dramatic storm clouds and a lightning bolt."
+   },
+   {
+    "edit": "style_cyberpunk",
+    "category": "modify",
+    "prompt": "Make it a cyberpunk night scene: neon signs in magenta and cyan on the building, holographic advertisements, wet street."
+   },
+   {
+    "edit": "style_painting",
+    "category": "modify",
+    "prompt": "Render the scene as a Van Gogh style oil painting with thick swirling brush strokes."
+   },
+   {
+    "edit": "weather_fog",
+    "category": "modify",
+    "prompt": "Make it a thick foggy morning: the distant parts of the scene fade into grey mist."
+   },
+   {
+    "edit": "weather_rain",
+    "category": "modify",
+    "prompt": "Make it a rainy day: wet reflective ground, puddles, dark overcast sky."
+   },
+   {
+    "edit": "weather_snow",
+    "category": "modify",
+    "prompt": "Make it a heavy winter snowfall: snow covering the ground, roofs and trees, falling snowflakes, overcast sky."
+   }
+  ],
+  "grid": true
+ },
+ "sydney_opera_house": {
+  "edits": [
+   {
+    "edit": "add_balloon",
+    "category": "add",
+    "prompt": "Add a large colourful hot-air balloon floating in the sky above the building."
+   },
+   {
+    "edit": "add_banners",
+    "category": "add",
+    "prompt": "Hang large red festival banners and flags on the facade of the building."
+   },
+   {
+    "edit": "add_crowd",
+    "category": "add",
+    "prompt": "Add a crowd of tourists walking on the ground in front of the building."
+   },
+   {
+    "edit": "add_fountain",
+    "category": "add",
+    "prompt": "Add a round stone fountain with splashing water in the foreground."
+   },
+   {
+    "edit": "light_golden",
+    "category": "modify",
+    "prompt": "Make it golden hour: low warm sun from the left, long shadows, orange glow on the facade."
+   },
+   {
+    "edit": "light_night",
+    "category": "modify",
+    "prompt": "Make it night: dark blue sky with stars, the building floodlit in warm orange light, windows and arches glowing."
+   },
+   {
+    "edit": "material_ivy",
+    "category": "modify",
+    "prompt": "Cover the building densely with green ivy and moss, as if abandoned for centuries."
+   },
+   {
+    "edit": "material_marble",
+    "category": "modify",
+    "prompt": "Turn the building's stone into polished white marble with gold trim."
+   },
+   {
+    "edit": "remove_people",
+    "category": "remove",
+    "prompt": "Remove every person, vehicle, fence and sign from the scene, leaving the empty ground."
+   },
+   {
+    "edit": "remove_trees",
+    "category": "remove",
+    "prompt": "Remove all trees and bushes; show what is behind them (sky, ground, distant buildings)."
+   },
+   {
+    "edit": "replace_ground_sand",
+    "category": "replace",
+    "prompt": "Replace the ground, grass and pavement with golden desert sand dunes."
+   },
+   {
+    "edit": "replace_ground_water",
+    "category": "replace",
+    "prompt": "Replace the ground and grass in front of the building with a calm, shallow reflecting pool that mirrors the building."
+   },
+   {
+    "edit": "replace_sky_storm",
+    "category": "replace",
+    "prompt": "Replace the sky with dark dramatic storm clouds and a lightning bolt."
+   },
+   {
+    "edit": "style_cyberpunk",
+    "category": "modify",
+    "prompt": "Make it a cyberpunk night scene: neon signs in magenta and cyan on the building, holographic advertisements, wet street."
+   },
+   {
+    "edit": "style_painting",
+    "category": "modify",
+    "prompt": "Render the scene as a Van Gogh style oil painting with thick swirling brush strokes."
+   },
+   {
+    "edit": "weather_fog",
+    "category": "modify",
+    "prompt": "Make it a thick foggy morning: the distant parts of the scene fade into grey mist."
+   },
+   {
+    "edit": "weather_rain",
+    "category": "modify",
+    "prompt": "Make it a rainy day: wet reflective ground, puddles, dark overcast sky."
+   },
+   {
+    "edit": "weather_snow",
+    "category": "modify",
+    "prompt": "Make it a heavy winter snowfall: snow covering the ground, roofs and trees, falling snowflakes, overcast sky."
+   }
+  ],
+  "grid": true
+ }
+}
