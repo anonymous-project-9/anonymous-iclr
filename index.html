@@ -72,27 +72,15 @@ footer{padding:28px 0 56px;font:400 13px/1.6 var(--font-mono);color:var(--muted)
 <body>
 <header class="top"><div class="wrap">
   <div class="eyebrow">Anonymous project page · under review</div>
-  <h1>Edit <em>one image</em>, edit the whole 3D scene.</h1>
-  <p class="sub">SceneEdit: a geometry–appearance decoupled video generator turns one edited photograph into consistent multi-view videos; those videos are distilled into <b>one</b> editable Gaussian scene whose look is switched, blended or re-edited at real-time frame rates.</p>
-  <div class="meta">
-    <span><b>geometry</b> → depth renderings of a point-cloud memory</span>
-    <span><b>appearance</b> → one RGB anchor image</span>
-    <span><b>Stage A</b> → videos along any camera path, 21–81 frames, up to 1536×1024</span>
-    <span><b>Stage B/C</b> → one 3D Gaussian scene, shared geometry, edit latent z, real-time</span>
-  </div>
+  <h1>Consistant and controlable animation for Scene Reconstruction.</h1>
+  <p class="sub">A geometry–appearance decoupled video generator turns one edited photograph into consistent multi-view videos; those videos are distilled into <b>one</b> editable Gaussian scene whose look is switched, blended or re-edited at real-time frame rates.</p>
+
 </div></header>
 
 <section><div class="wrap">
-  <div class="two">
-    <div class="prose">
-      <h2>One photograph fixes the scene. One edited photograph changes how it looks.</h2>
-      <p class="lead">Camera-controlled video generators lift a photo into an explorable scene by rendering a point cloud along a camera path. Those renderings are usually <b>RGB</b>, so the generator is anchored to the appearance of the input: editing the photo re-estimates the geometry from the edited pixels and changes the scene with it.</p>
-      <p>We route the two roles of the input through different channels. <b>Geometry</b> enters only as <b>depth</b>: a global point-cloud memory stores metric depth and is rendered as a scale-normalised log-depth image at every target camera; retrieved memory frames are depth images too. <b>Appearance</b> enters only through <b>one RGB anchor</b>, which is also the first frame. Training with a clip-consistent photometric augmentation (applied to the anchor and to every target frame, never to depth) makes the model read appearance from the anchor and structure from depth.</p>
-      <p>The result: the same trajectories rendered from the same geometry with different reference images give videos whose appearance follows the edit while structure and camera motion stay fixed — which makes them, by construction, multi-view observations of <b>one</b> geometry under several appearances. That is exactly what a 3D representation needs to become editable.</p>
-    </div>
+  <div >
     <figure>
-      <img src="media/method_preview-1.png" alt="SceneEdit overview: Stage A decoupled generation, Stage B editable Gaussian scene, Stage C interactive editing">
-      <figcaption><b>Overview.</b> Blue: geometry, always from the source photograph (depth only). Orange: appearance, from one edited image. Green: the 3D asset shared by all edits. Stage A generates the observations, Stage B distils them, Stage C edits them interactively.</figcaption>
+      <img src="media/method.png" alt="Method overview">
     </figure>
   </div>
 </div></section>
@@ -114,38 +102,6 @@ footer{padding:28px 0 56px;font:400 13px/1.6 var(--font-mono);color:var(--muted)
   </div>
 </div></section>
 
-
-<section><div class="wrap">
-  <span class="tag">Stage B · C — one editable Gaussian scene</span>
-  <h2>Distil the videos into a scene you can re-colour in real time</h2>
-  <div class="two">
-    <div class="prose">
-      <p class="lead">Every season's videos follow the same cameras, so all of them are observations of one geometry. We fit a single 3D Gaussian splat whose positions, scales, rotations and opacities are shared by all seasons; every Gaussian carries a 16-d appearance feature <kbd>f</kbd>, and a small network <kbd>g(f, z)</kbd> turns it into colour for the current <b>edit latent z</b>. An edit encoder <kbd>E(A, B)</kbd> predicts z from the source photograph and its edited version, so switching season is switching z, and a brand-new edited image is a brand-new z — no re-fitting.</p>
-      <p>Generated videos follow the nominal cameras only approximately, and each season deviates differently (0.4–2 m). Refining the cameras <b>per season</b> with WorldMirror 2.0 and learning a pose correction per (camera, season) during fitting is worth +0.4–1.5 dB and up to +29% sharpness; it is the single most important step, and it tells us what limits sharpness: not the splat, but the mutual consistency of the generated views.</p>
-      <p>Three routes cover edits the scene was never fitted to: the <b>encoder latent</b> (photometric edits at 0.8–1.0 of their strength once the encoder sees explicit colour statistics), a <b>closed-form colour transform</b> fitted on the anchor view and baked into the spherical harmonics (exact, seconds), and the <b>video oracle</b>: a content edit such as a night scene with lit windows goes back through Stage A and becomes an additional appearance layer on the frozen geometry. Everything renders at 409 frames per second (0.74M Gaussians, 1088×720, one H20); switching the edit costs 9 ms.</p>
-    </div>
-    <div>
-      <figure><img src="media/gs_seasons.jpg" alt="Four seasons and a night layer rendered from one Gaussian scene"><figcaption><b>One Colosseum scene, one training camera.</b> The four fitted season latents and a video-oracle night layer.</figcaption></figure>
-      <figure style="margin-top:14px"><img src="media/gs_edits.jpg" alt="Unseen edits rendered through the latent, colour-fit and oracle routes"><figcaption><b>Unseen edits.</b> Top: encoder latent (dusk, night, vivid warm) and golden hour from the video oracle. Bottom: the same edits through the closed-form colour fit, and night from the oracle.</figcaption></figure>
-    </div>
-  </div>
-  <div class="scroll" style="margin-top:22px"><table>
-    <thead><tr><th>Scene (210 cameras × 4 seasons, 720p videos)</th><th>PSNR, cameras refined once</th><th>PSNR, per-season cameras</th><th>Sharpness ratio</th></tr></thead>
-    <tbody>
-      <tr><td>Colosseum</td><td>18.48</td><td><b>19.76</b></td><td>0.46 → 0.56</td></tr>
-      <tr><td>Eiffel Tower</td><td>20.02</td><td><b>21.47</b></td><td>0.34 → 0.44</td></tr>
-      <tr><td>Notre-Dame</td><td>17.93</td><td><b>18.28</b></td><td>0.43 → 0.46</td></tr>
-      <tr><td>Great Wall</td><td>19.39</td><td><b>20.15</b></td><td>0.25 → 0.30</td></tr>
-      <tr><td>Great Pyramid</td><td>—</td><td><b>24.50</b></td><td>0.32</td></tr>
-      <tr><td>Sydney Opera House</td><td>—</td><td><b>22.18</b></td><td>0.38</td></tr>
-      <tr><td>Taj Mahal</td><td>—</td><td><b>19.11</b></td><td>0.37</td></tr>
-      <tr><td>Sydney Opera House, gentle paths (motion 0.2, no dolly)</td><td>22.18 (10 paths)</td><td><b>24.19</b></td><td>0.38 → 0.45</td></tr>
-      <tr><td>Taj Mahal, gentle paths (motion 0.2, no dolly)</td><td>19.11 (10 paths)</td><td><b>19.47</b></td><td>0.37 → 0.45</td></tr>
-      <tr><td>Sphinx, gentle paths (motion 0.2, no dolly)</td><td>23.72 (motion 0.4)</td><td><b>24.83</b></td><td>0.39 → 0.50</td></tr>
-    </tbody>
-  </table></div>
-  <p class="callout" style="margin-top:18px">What limits the scenes is the generation side: hallucinated regions differ between trajectories and blur when fused. Adding larger-motion trajectories makes it worse (315 cameras: −1 dB); gentle, subject-scaled paths make it better (Sphinx +1.1 dB / +27% sharpness, Sydney +2.0 dB / +19%, Taj Mahal +0.4 dB / +20%). Fitting-side counter-measures give a few percent.</p>
-</div></section>
 
 <section><div class="wrap">
   <div class="two">
@@ -183,7 +139,6 @@ footer{padding:28px 0 56px;font:400 13px/1.6 var(--font-mono);color:var(--muted)
 <section id="edits"><div class="wrap">
   <span class="tag warm">General edits · add · remove · replace · modify</span>
   <h2>Any edit of the photograph becomes an edit of the scene</h2>
-  <p class="prose">Seasons are only the benchmark. Here the reference photograph of each landmark is edited with an instruction-following image editor (gpt-image-2) under a strict viewpoint-preservation instruction: objects are <b>added</b> (balloon, crowd, fountain, banners) or <b>removed</b> (trees, people), regions are <b>replaced</b> (ground → water or sand, sky → storm) and materials, lighting, weather and style are <b>modified</b> (marble, ivy, night, golden hour, snow, fog, rain, cyberpunk, oil painting). Geometry always comes from the un-edited photograph; the edited image is only the appearance anchor. 126 clips below, all along the same orbit path, so every landmark's edits share their cameras frame by frame.</p>
   <p class="notice">Grids play nine synchronised videos (top-left: no edit). In the browse-all rows the edited photograph stays on the left while the generated orbit plays on the right; videos load when scrolled into view. Hard cases are visible too: objects that are not in the source geometry (a balloon) are placed from the anchor alone and can drift in depth, and on the Colosseum orbit a few edits hallucinate a foreground tree or pole.</p>
   <h3 style="margin-top:26px">Great Pyramid</h3>
   <figure><img src="media/edits/pairs_great_pyramid_giza.jpg" alt="Great Pyramid source photograph and its edits" loading="lazy"><figcaption><b>Edited photographs</b> (top-left: source). All keep the viewpoint of the source; they are the appearance anchors of the clips below.</figcaption></figure>
